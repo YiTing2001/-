@@ -92,6 +92,12 @@ def window2():
 
     class Application(Frame):
 
+#             label01Text = ((0,0,),
+#                          (0,0,0),
+#                          (0,0,0,))
+#             label02Text =((0,0,0),
+#                           (0,0,0),
+#                           (0,0,0))
         def __init__(self, master=None):
             super().__init__(master)
             self.master = master
@@ -110,12 +116,6 @@ def window2():
             #创建3/1/3的标签架构
             #填入数据
 
-            label01Text = ((6,6,6),
-                         (2,5,1),
-                         (4,4,3,))
-            label02Text =((5,1,1),
-                          (5,6,6),
-                          (0,1,0))
             #中间那行白色的
             for rindex in range(0,3):
                 Label(self, text="", width=8, height=4, bg="white") \
